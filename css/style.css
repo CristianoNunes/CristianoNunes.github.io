@@ -1,0 +1,30 @@
+body {
+    background-image: url('../img/img-background.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-size: cover;
+}
+
+.header {
+    padding-right: 30px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.head {
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#fotoPerfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+h1, h2, h3, h4, h5, p, a, li {
+    color: white;
+}
