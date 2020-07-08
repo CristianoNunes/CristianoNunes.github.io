@@ -12,14 +12,21 @@
 <body>
 
     <header class="header">
-        <a href="#fotoPerfil">Perfil</a>
-        <a href="#about">Sobre</a>
-        <a href="#softskills">Soft Skills</a>
-        <a href="#hardskills">Hard Skills</a>
-        <a href="#blogs">Blogs</a>
+        <div class="logo">
+            <H1> < > Cristiano Nunes</H1>
+        </div>
+        <div class="menu">
+            <a href="#fotoPerfil">Perfil</a>
+            <a href="#about">Sobre</a>
+            <a href="#softskills">Soft Skills</a>
+            <a href="#hardskills">Hard Skills</a>
+            <a href="#blogs">Blogs</a>
+        </div>
     </header>
 
-    <section class="head">
+
+    <div class="row">
+        
         <div class="profile-container">
             <div class="fotoPerfil">
                 <img src="/img/fotoPerfil.png" id="fotoPerfil" alt="Cristiano Nunes Foto Perfil">
@@ -31,9 +38,17 @@
                 <span>Desenvolvedor Full Stack</span>
             </div>
         </div>
-    </section>
-    
-        <section id="about">
+
+        <div class="social-networks">            
+            <a href="https://github.com/CristianoNunes" target="_blank"><img src="/img/github.png" alt="Github" /></a>
+            <a href="https://www.linkedin.com/in/cristianonunesp/" target="_blank"><img src="/img/linkedin.png" alt="Linkedin" /></a>
+        </div>
+
+    </div>
+
+    <div class="row">
+        
+        <div class="container-left" id="about">
             <div class="container">
                 <div class="container-title">
                     <span>SOBRE MIM</span>
@@ -45,9 +60,9 @@
                     Software na <span class="destaque">Trybe</span>.
                 </p>
             </div>
-        </section>
+        </div>
     
-        <section id="softskills">
+        <div class="container-right" id="softskills">
             <div class="container">
                 <div class="container-title">
                     <span>Soft Skills</span>
@@ -58,33 +73,40 @@
                     <li>Criativo</li>
                 </ul>
             </div>
-        </section>
-    
-    <section id="hardskills">
-        <div class="container">
-            <div class="container-title">
-                <span>HARD SKILLS</span>
-            </div>
-            <ul>
-                <li><strong>JavaScript</strong></li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-            </ul>
         </div>
-    </section>
 
-    <section id="blogs">
-        <div class="container">
-            <div class="container-title">
-                <span>BLOGS RECOMENDADOS</span>
+    </div>
+    
+    
+    <div class="row">
+    
+        <div class="container-left" id="hardskills">
+            <div class="container">
+                <div class="container-title">
+                    <span>HARD SKILLS</span>
+                </div>
+                <ul>
+                    <li><strong>JavaScript</strong></li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
             </div>
-            <ul>
-                <li> <a href="https://diolinux.com.br/" target="_blank">Diolinux</a> </li>
-                <li> <a href="https://blog.rocketseat.com.br/" target="_blank">RockeatSeat</a> </li>
-            </ul>
-            
         </div>
-    </section>
+
+        <div class="container-right" id="blogs">
+            <div class="container">
+                <div class="container-title">
+                    <span>BLOGS RECOMENDADOS</span>
+                </div>
+                <ul>
+                    <li> <a href="https://diolinux.com.br/" target="_blank">Diolinux</a> </li>
+                    <li> <a href="https://blog.rocketseat.com.br/" target="_blank">RockeatSeat</a> </li>
+                </ul>
+                
+            </div>
+        </section>
+
+    </div>
     
 </body>
 </html>
