@@ -1,112 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristiano Nunes - Dev Full Stack</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"/>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristiano Nunes</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="header">
-        <div class="logo">
-            <H1> < > Cristiano Nunes</H1>
+  <section class="master">
+    <section class="menu">
+      <header class="headerMenu">
+        <div class="photo">
+          <img src="/img/photoProfile.png" id="photoProfile" alt="Cristiano Nunes Foto Perfil">
         </div>
-        <div class="menu">
-            <a href="#fotoPerfil">Perfil</a>
-            <a href="#about">Sobre</a>
-            <a href="#softskills">Soft Skills</a>
-            <a href="#hardskills">Hard Skills</a>
-            <a href="#blogs">Blogs</a>
+        <div class="name">
+          <span>Cristiano Nunes</span>
+      </div>
+      <div class="job">
+          <span>Web Developer Full Stack</span>
+      </div>
+      <div class="social-networks">            
+        <a href="https://github.com/CristianoNunes" target="_blank"><div class="iconGithub"></div></a>
+        <a href="https://www.linkedin.com/in/cristianonunesp/" target="_blank"><div class="iconLinkedin"></div></a>
+      </div>
+      </header>
+      <nav class="btnNavs">
+        <div class="btnSection">
+          <a href="#about">ABOUT</a>
         </div>
-    </header>
-
-
-    <div class="row">
-        
-        <div class="profile-container">
-            <div class="fotoPerfil">
-                <img src="/img/fotoPerfil.png" id="fotoPerfil" alt="Cristiano Nunes Foto Perfil">
-            </div>
-            <div class="name">
-                <span>Cristiano Nunes</span>
-            </div>
-            <div class="job">
-                <span>Desenvolvedor Full Stack</span>
-            </div>
+        <div class="btnSection">
+          <a href="#hardskills">HARD SKILLS</a>
         </div>
-
-        <div class="social-networks">            
-            <a href="https://github.com/CristianoNunes" target="_blank"><img src="/img/github.png" alt="Github" /></a>
-            <a href="https://www.linkedin.com/in/cristianonunesp/" target="_blank"><img src="/img/linkedin.png" alt="Linkedin" /></a>
+        <div class="btnSection">
+          <a href="#projects">PROJECTS</a>
         </div>
-
-    </div>
-
-    <div class="row">
-        
-        <div class="container-left" id="about">
-            <div class="container">
-                <div class="container-title">
-                    <span>SOBRE MIM</span>
-                </div>
-                <p>Prazer, sou Cristiano Nunes, <span class="destaque">brasileiro</span>, atualmente moro em 
-                    <span class="destaque">Doutor Severiano no Rio Grande do Norte</span>, sou apaixonado por tecnologia desde criança. 
-                    Sou formado em Análise e Desenvolvimento de Sistemas pelo IFRN, curso Pós-Graduação em
-                    Gestão de Tecnologia da Informação na FAVENI e sou aluno do curso de Desenvolvimento de 
-                    Software na <span class="destaque">Trybe</span>.
-                </p>
-            </div>
+        <div class="btnSection">
+          <a href="#contact">CONTACT ME</a>
         </div>
+      </nav>
+    </section>
     
-        <div class="container-right" id="softskills">
-            <div class="container">
-                <div class="container-title">
-                    <span>Soft Skills</span>
-                </div>
-                <ul>
-                    <li><strong>Comunicativo</strong></li>
-                    <li>Colaborativo</li>
-                    <li>Criativo</li>
-                </ul>
-            </div>
-        </div>
+    <section class="main">
+      <article class="container" id="about">
+        <header class="headerTitle">
+          <h3 class="title">ABOUT</h3>
+        </header>
+        <p class="content">
+          Pleasure, I'm Cristiano Nunes, I've been passionate about technology since I 
+          was a child. I am graduated in Systems Analysis and Development by IFRN, 
+          Postgraduate course in Information Technology ABOUT at FAVENI and I am 
+          a student in the Software Development course at Trybe.
+        </p>
+      </article>
 
-    </div>
-    
-    
-    <div class="row">
-    
-        <div class="container-left" id="hardskills">
-            <div class="container">
-                <div class="container-title">
-                    <span>HARD SKILLS</span>
-                </div>
-                <ul>
-                    <li><strong>JavaScript</strong></li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                </ul>
-            </div>
-        </div>
+      <article class="container"  id="hardskills">
+        <header class="headerTitle">
+          <h3 class="title">HARD SKILLS</h3>
+        </header>
+        <table>
+          <tr>
+            <th></th>
+            <th>Beginner</th>
+            <th>Intermediate</th>
+            <th>Advanced</th>
+          </tr>
+          <tr>
+            <td>HTML5</td>
+            <td class="bordaCantoEsquerdoSup"></td>
+            <td class="bordaTopo"></td>
+            <td class="bordaCantoDireitoSup"></td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td class="bordaEsquerda"></td>
+            <td></td>
+            <td class="bordaDireita"></td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td class="bordaEsquerda"></td>
+            <td></td>
+            <td class="bordaDireita"></td>
+          </tr>
+          <tr>
+            <td>ReactJS</td>
+            <td class="bordaEsquerda"></td>
+            <td></td>
+            <td class="bordaDireita"></td>
+          </tr>
+          <tr>
+            <td>Redux</td>
+            <td class="bordaEsquerda"></td>
+            <td></td>
+            <td class="bordaDireita"></td>
+          </tr>
+          <tr>
+            <td>React Hooks</td>
+            <td class="bordaEsquerda"></td>
+            <td></td>
+            <td class="bordaDireita"></td>
+          </tr>
+          <tr>  
+            <td>Git</td>
+            <td class="bordaCantoEsquerdoInf"></td>
+            <td class="bordaDebaixo"></td>
+            <td class="bordaCantoDireitoInf"></td>
+          </tr>
+          </table>
+      </article>
 
-        <div class="container-right" id="blogs">
-            <div class="container">
-                <div class="container-title">
-                    <span>BLOGS RECOMENDADOS</span>
-                </div>
-                <ul>
-                    <li> <a href="https://diolinux.com.br/" target="_blank">Diolinux</a> </li>
-                    <li> <a href="https://blog.rocketseat.com.br/" target="_blank">RockeatSeat</a> </li>
-                </ul>
-                
-            </div>
-        </section>
+      <article class="container"  id="projects">
+        <header class="headerTitle">
+          <h3 class="title">PROJECTS</h3>
+        </header>
+        <p class="content">
+          Pleasure, I'm Cristiano Nunes, I've been passionate about technology since I 
+          was a child. I am graduated in Systems Analysis and Development by IFRN, 
+          Postgraduate course in Information Technology PROJECTS at FAVENI and I am 
+          a student in the Software Development course at Trybe.
+        </p>
+      </article>
 
-    </div>
-    
+      <article class="container"  id="contact">
+        <header class="headerTitle">
+          <h3 class="title">CONTACT ME</h3>
+        </header>
+        <p class="content">
+          Pleasure, I'm Cristiano Nunes, I've been passionate about technology since I 
+          was a child. I am graduated in Systems Analysis and Development by IFRN, 
+          Postgraduate course in Information Technology CONTACT ME at FAVENI and I am 
+          a student in the Software Development course at Trybe.
+        </p>
+      </article>
+    </section>
+  </section>
 </body>
 </html>

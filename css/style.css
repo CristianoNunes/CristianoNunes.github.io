@@ -1,123 +1,208 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
-    background-image: url('../img/img-background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Montserrat, sans-serif;
-    color: white;
+  background-color: #282A36;
+  color: #F8F8F2;
+  display: flex;
+  font-family: Roboto;
+  height: 100%;
+  width: 100%;
 }
 
-.header {
-    width: 100%;
-    height: 50px;
-    text-align: right;
-    font-size: 20px;
-    text-decoration: none;
-    margin-bottom: 20px;
-    background-color: black;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    display:inline-block;
-}
-
-.logo {
-    float: left;
-    margin-left: 20px;
-    font-family: Roboto;
-    margin: auto;
+.master {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
 }
 
 .menu {
-    float: right;
-    padding-top: 10px;
-    padding-right: 20px;
+  -webkit-box-align: center;
+  background-color: #44475A;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  width: 20rem;
 }
 
-.header a {
-    padding-right: 20px;
-    
+.headerMenu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-#fotoPerfil {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+#photoProfile {
+  border-radius: 50%;
+  width: 195px;
+  height: 200px;
 }
 
 .name {
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 40px;
-    
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.job {
-    font-size: 30px;
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.social-networks a {
+  padding-right: 10px;
+}
+
+.iconGithub {
+  background: url(../img/github.png) no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.iconGithub:hover {
+  background: url(../img/github-white.png) no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.iconLinkedin {
+  background: url(../img/linkedin.png) no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.iconLinkedin:hover {
+  background: url(../img/linkedin-white.png) no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.btnNavs {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.btnSection {
+  align-items: center;
+  color: #6272A4;
+  display: flex;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
 }
 
 a {
-    color: white;
+  color: inherit;
+  text-decoration: none;
 }
 
-.row {
-    width: 100%;
-    display:inline-block;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-container {
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
-
-.container-left {
-    float: left;
-    max-width: 40%;
-    margin-left: 50px;
-}
-
-.container-right {
-    float: right;
-    max-width: 40%;
-    margin-right: 50px;
+.main {
+  display: block;
+  flex-direction: column;
+  margin-left: 50px;
+  height: 100%;
+  padding: 0px 3.75rem 0px 20rem;
+  width: 100vh;
 }
 
 .container {
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    width: 500px;
-    height: 180px;
-    text-align: justify;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 10px;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 100px;
 }
 
-.container ul {
-    padding-left: 20px;;
+.headerTitle {
+  margin-bottom: 50px;
 }
 
-.container-title {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    color: white;
-    font-weight: 600;
-    width: 100%;
-    height: 20px;
+.title {
+  color: #6272A4;
 }
 
-.destaque {
-    font-style: italic;
-    font-weight: 600;
+.content {
+  
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.bordaCantoEsquerdoSup {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+}
+
+.bordaEsquerda {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+}
+
+.bordaCantoEsquerdoInf {
+  border: 1px solid white;
+  border-right: none;
+  border-top: none;
+}
+
+.bordaTopo {
+  border: 1px solid white;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.bordaDebaixo {
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.bordaCantoDireitoSup {
+  border: 1px solid white;
+  border-bottom: none;
+  border-left: none;
+}
+
+.bordaDireita {
+  border: 1px solid white;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+}
+
+.bordaCantoDireitoInf {
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
 }
